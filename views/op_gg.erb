@@ -1,0 +1,17 @@
+<form action="/op_gg" required="true">
+    <select name="search_method">
+        <option></option>
+        <option value="self">승패만보기</option>
+        <option value="opgg">opgg</option>
+    </select>
+    <input type="text" name="userName" placeholder="소환사이름">
+    <input type="submit" value="검색">
+</form>
+
+<% if params[:userName] %>
+<ul>
+    <li><%=params[:userName]%>님의 전적입니다.</li>
+    <li><%=@win%>승</li>
+    <li><%=@lose%>패</li>
+</ul>
+<% end%>

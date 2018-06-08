@@ -1,0 +1,24 @@
+<form action="https://search.naver.com/search.naver?">
+네이버<input type="text" name="query">
+<input type="button" value="검색"><br>
+</form>
+</a><br><br>
+
+<form action="https://www.google.co.kr/search?">
+구    글<input type="text" name="q">
+<input type="button" value="검색"><br>
+</form>
+
+
+<p>----form method POST를 이용한 방법----</p>
+<form method="POST">
+    <input type="hidden" name="engine" value="naver">
+    <input type="text" name="query" placeholder="네이버 검색">
+    <input type="submit" value="검색">
+</form>
+
+<form method="POST">
+    <input type="hidden" name="engine" value="google">
+    <input type="text" name="q" placeholder="구글 검색">
+    <input type="submit" value="검색">
+</form>
